@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+<!--=================================
+Service -->
+<section class="space-ptb">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-4">
+            <!-- Barre latérale -->
+            <div class="sidebar">            
+            <!-- Services de soins -->
+            <div class="widget bg-primary" style="background-image: url(images/pattern.png);">
+                <div class="widget-services-care text-center">
+                <div class="services-care-icon mb-3"><i class="flaticon-support"></i></div>
+                <h3 class="services-care-title text-white mb-4">Votre QRcode médical</h3>
+                <a href="#" class="btn btn-white">Télécharger</a>
+                </div>
+            </div>
+            <!-- Services de soins -->
+            </div>
+        </div>
+        <div class="col-lg-8 mt-lg-0 mt-5">
+            <div class="ms-lg-5">
+            <div class="section-title custom-title">
+                <h2>Notre plateforme communautaire offrant des générations de soins. Merci, {{ patient.nom }} ! Votre enregistrement a été effectué avec succès.</h2>   
+            </div>           
+            <div class="row">
+                <!-- Service-01 DÉBUT -->
+                <div class="col-md-5 mb-3 text-center"> <!-- Ajout de la classe 'text-center' pour centrer le contenu -->
+                <div class="feature-items">
+                    <!-- Envelopper l'icône avec un lien -->
+                    <a typpe="button" href="#" id="scanQrcode">
+                        <div class="feature-icon">
+                            <i class="fa fa-camera fa-5x"></i>
+                        </div>
+                    </a>
+                    <div class="feature-content">
+                        <h6 class="mt-3">Scanner le QRcode télécharger</h6> <!-- Ajout de la classe 'mt-3' pour un espace en haut -->
+                    </div>
+                </div>
+            </div>              
+                <!-- Service-01 END -->                             
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!--=================================
+Service -->
+{% endblock %}

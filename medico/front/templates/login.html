@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block content %}
+<!--=================================
+banner -->
+<section class="inner-banner bg-light">
+    <div class="container">
+        <div class="row align-items-center intro-title">
+        <div class="col-12">
+            <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html"> <i class="fas fa-home"></i> </a></li>
+            <li class="breadcrumb-item"> <i class="fas fa-chevron-right"></i> <a href="javascript:void(0)">Pages</a></li>
+            <li class="breadcrumb-item active"> <i class="fas fa-chevron-right"></i> <span> Login</span></li>
+            </ol>
+        </div>
+        </div>
+    </div>
+</section>
+<!--=================================
+banner -->
+
+<!--=================================
+login-->
+<section class="space-ptb">
+<div class="container">
+    <div class="row justify-content-center">
+    <div class="col-xl-7 col-lg-9 col-md-10">
+        <div class="login-form">
+        <!-- Login form -->
+        <form method="POST">
+            <h3 class="mb-4 text-center text-primary">Connectez-vous à votre compte</h3>
+            <div class="row align-items-center">
+            <div class="mb-3 col-md-12">
+                <input type="email" class="form-control" id="email" placeholder="Adresse e-mail de la clinique">
+            </div>
+            <div class="mb-3 col-md-12">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="mb-3 col-md-6">
+                <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Souvenez-vous de moi</label>
+                </div>
+            </div>
+            <div class="mb-3 col-md-6 text-md-end">
+                <a href="#">Mot de passe oublié ?</a>
+            </div>
+            <div class="mb-3 col-lg-12">
+            </div>
+            <div class="mb-3 col-sm-12 mb-0">
+                <button type="submit" id="loginForm" class="btn btn-outline-primary my-3 my-sm-0">Se connecter</button>
+                <span class="ms-3">Vous n'avez pas de compte ? <a href="#">Créer un compte</a></span>
+            </div>
+            </div>
+        </form>
+        <!-- Login form -->
+        <!-- login-social START -->
+        <div class="login-social-media">
+            <div class="mb-4 d-block text-center"><b class="bg-white pl-2 pr-2 d-block">Se connecter</b></div>
+            <form class="row">
+            <div class="col-sm-6">
+                <a class="btn facebook-bg social-bg-hover d-block mb-3" href="#"><span><i class="fab fa-facebook-f"></i>Connexion avec Facebook</span></a>
+            </div>
+            <div class="col-sm-6">
+                <a class="btn twitter-bg social-bg-hover d-block mb-3" href="#"><span><i class="fab fa-twitter"></i>Connexion avec Twitter</span></a>
+            </div>
+            <div class="col-sm-6">
+                <a class="btn instagram-bg social-bg-hover d-block mb-3 mb-sm-0" href="#"><span><i class="fab fa-instagram"></i>Connexion avec Instagram</span></a>
+            </div>
+            <div class="col-sm-6">
+                <a class="btn linkedin-bg social-bg-hover d-block" href="#"><span><i class="fab fa-linkedin-in"></i>Connexion avec Linkedin</span></a>
+            </div>
+            </form>
+        </div>
+        <!-- login-social END -->
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+<!--=================================
+Contact-info -->
+{% endblock %}

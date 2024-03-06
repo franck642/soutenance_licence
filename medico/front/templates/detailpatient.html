@@ -1,0 +1,225 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+  <!--=================================
+banner -->
+<section class="inner-banner bg-light">
+    <div class="container">
+        <div class="row align-items-center intro-title">
+        <div class="col-12">
+            <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html"> <i class="fas fa-home"></i> </a></li>
+            <li class="breadcrumb-item"> <i class="fas fa-chevron-right"></i> <a href="shop.html"> Shop </a></li>
+            <li class="breadcrumb-item active"> <i class="fas fa-chevron-right"></i> <span> Shop Checkout </span></li>
+            </ol>
+        </div>
+        </div>
+    </div>
+</section>
+<!--=================================
+banner -->
+  
+<!--=================================
+Checkout -->
+<section class="space-ptb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="checkout-info mb-4 mb-md-5">
+                    <p class="mb-0"><strong>Déjà client ?</strong> <a href="login.html">Cliquez ici pour vous connecter</a></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="checkout-info-coupon mb-5">
+                    <p class="checkout-info"><strong>Vous avez un coupon ?</strong>
+                        <a data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
+                            Cliquez ici pour saisir votre code
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapse">
+                        <div class="checkout-coupon">
+                            <p>Si vous avez un code coupon, veuillez l'appliquer ci-dessous.</p>
+                            <form class="form-row">
+                                <div class="mb-3 col-sm-12">
+                                    <input type="text" class="form-control" id="coupon_code" placeholder="Code coupon">
+                                </div>
+                            </form>
+                            <a href="#" class="btn btn-primary">Appliquer le coupon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="checkout">
+                    <div class="section-title">
+                        <h3 class="title">Informations du patient</h3>
+                    </div>
+                    <form class="row mt-4">
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Prénom</label>
+                            <input type="text" class="form-control" placeholder="Votre prénom">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Nom de famille</label>
+                            <input type="text" class="form-control" placeholder="Votre nom de famille">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Nom de la société</label>
+                            <input type="text" class="form-control" placeholder="Nom de votre société">
+                        </div>
+                        
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Votre adresse">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <input type="text" class="form-control" placeholder="Numéro de maison et nom de la rue">
+                        </div>
+                        
+                        
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Code postal</label>
+                            <input type="text" class="form-control" placeholder="Votre code postal">
+                        </div>
+                        <div class="mb-3 col-sm-12">
+                            <label class="form-label">Téléphone</label>
+                            <input type="text" class="form-control" placeholder="Votre numéro de téléphone">
+                        </div>
+                        <div class="mb-3 col-sm-12 mb-0">
+                            <label class="form-label">Adresse e-mail :</label>
+                            <input type="email" class="form-control" placeholder="Votre adresse e-mail">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5 mt-md-0">
+                <div class="section-title">
+                    <h3 class="title">Votre commande</h3>
+                </div>
+                <div class="checkout-review">
+                    <div class="table-responsive">
+                        <table class="table cart">
+                            <tbody>
+                                <!-- Contenu de la commande traduit -->
+                            </tbody>
+                            <tfoot>
+                                <!-- Contenu du pied de page de la commande traduit -->
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="accordion accordion-02 mb-3" id="accordion-faq">
+                        <div class="card">
+                          <div class="accordion-icon card-header" id="headingOne">
+                            <h6 class="mb-0">
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Direct bank transfer
+                            </button>
+                            </h6>
+                          </div>
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-faq">
+                            <div class="card-body">
+                              Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="accordion-icon card-header" id="headingTwo">
+                            <h6 class="mb-0">
+                            <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Check payments
+                            </button>
+                            </h6>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-faq">
+                            <div class="card-body">
+                              Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="accordion-icon card-header" id="headingthree">
+                            <h6 class="mb-0">
+                            <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                            Cash on delivery
+                            </button>
+                            </h6>
+                          </div>
+                          <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-bs-parent="#accordion-faq">
+                            <div class="card-body">
+                              Pay with cash upon delivery.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="accordion-icon card-header" id="headingfor">
+                            <h6 class="mb-0">
+                            <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefor" aria-expanded="false" aria-controls="collapsefor">
+                            PayPal
+                            </button>
+                            </h6>
+                          </div>
+                          <div id="collapsefor" class="collapse" aria-labelledby="headingfor" data-bs-parent="#accordion-faq">
+                            <div class="card-body">
+                              Pay with cash upon delivery.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <p>Vos données personnelles seront utilisées pour traiter votre commande, prendre en charge votre expérience sur ce site Web, et à d'autres fins décrites dans notre <a href="#">politique de confidentialité.</a></p>
+                    <div class="custom-control custom-checkbox my-4">
+                        <input type="checkbox" class="custom-control-input" id="dateposted1">
+                        <label class="custom-control-label" for="dateposted1">J'ai lu et j'accepte les <a href="#">conditions générales</a> du site</label>
+                    </div>
+                    <div class="d-grid"> <button type="button" class="btn btn-primary btn-lg">Passer la commande</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+Checkout -->
+{% endblock %}
