@@ -1,0 +1,279 @@
+{% extends 'bases.html' %}
+{% load static %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+<!-- MAIN-CONTENT -->
+
+<div class="main-content app-content">
+
+                
+    <div class="container-fluid">
+
+        <!-- Page Header -->
+        <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
+            <h1 class="page-title fw-semibold fs-18 mb-0">HRM</h1>
+            <div class="ms-md-1 ms-0">
+                <nav>
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboards</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">HRM</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header Close -->
+
+        <!-- Start::row-1 -->
+        <div class="row">
+            <div class="col-xxl-5 col-xl-12">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card custom-card hrm-main-card primary">
+                            <div class="card-body">
+                                <div class="d-flex align-items-top">
+                                    <div class="me-3">
+                                        <span class="avatar bg-primary">
+                                            <i class="ri-team-line fs-18"></i>
+                                        </span>
+                                    </div>
+                                    <div class="flex-fill">
+                                        <span class="fw-semibold text-muted d-block mb-2">Total Hôpitaux</span>
+                                        <h5 class="fw-semibold mb-2">22,124</h5>
+                                        <p class="mb-0">
+                                            <span class="badge bg-primary-transparent">This Month</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <span class="fs-14 fw-semibold text-success">+1.03%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card custom-card  hrm-main-card warning">
+                            <div class="card-body">
+                                <div class="d-flex align-items-top">
+                                    <div class="me-3">
+                                        <span class="avatar bg-warning">
+                                            <i class="ri-service-line fs-18"></i>
+                                        </span>
+                                    </div>
+                                    <div class="flex-fill">
+                                        <span class="fw-semibold text-muted d-block mb-2">Total Clients</span>
+                                        <h5 class="fw-semibold mb-2">8,289</h5>
+                                        <p class="mb-0">
+                                            <span class="badge bg-warning-transparent">This Month</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <span class="fs-14 fw-semibold text-danger">-1.28%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                               
+                </div>
+            </div>            
+        </div>
+        <!--End::row-1 -->
+
+        <!-- Start::row-2 -->
+        <div class="row">            
+            <div class="col-xxl-5 col-xl-12">
+                <div class="card custom-card overflow-hidden">
+                    <div class="card-header">
+                        <div class="card-title">Clients</div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Client</th>
+                                        <th scope="col">Mail</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center lh-1">
+                                                <div class="me-3">
+                                                    <span class="avatar avatar-rounded">
+                                                        <img src="../assets/images/faces/2.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="d-block fw-semibold mb-1">Diana Aise</span>
+                                                    <span class="d-block text-muted fs-12">C.E.O</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>diana.1116@demo.com</td>
+                                        <td><div class="dropdown">
+                                            <a href="javascript:void(0);" class="btn btn-outline-light btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Active<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Active</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Inactive</a></li>
+                                            </ul>
+                                        </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-list">
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-primary-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-success-light btn-icon"><i class="ri-delete-bin-line"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center lh-1">
+                                                <div class="me-3">
+                                                    <span class="avatar avatar-rounded">
+                                                        <img src="../assets/images/faces/8.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="d-block fw-semibold mb-1">Rose Mary</span>
+                                                    <span class="d-block text-muted fs-12">C.E.O</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>rose756@demo.com</td>
+                                        <td><div class="dropdown">
+                                            <a href="javascript:void(0);" class="btn btn-outline-light btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Active<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Active</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Inactive</a></li>
+                                            </ul>
+                                        </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-list">
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-primary-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-success-light btn-icon"><i class="ri-delete-bin-line"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center lh-1">
+                                                <div class="me-3">
+                                                    <span class="avatar avatar-rounded">
+                                                        <img src="../assets/images/faces/13.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="d-block fw-semibold mb-1">Gretchen Iox</span>
+                                                    <span class="d-block text-muted fs-12">Manager</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>gretchen.1.25@demo.com</td>
+                                        <td><div class="dropdown">
+                                            <a href="javascript:void(0);" class="btn btn-outline-light btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Active<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Active</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Inactive</a></li>
+                                            </ul>
+                                        </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-list">
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-primary-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-success-light btn-icon"><i class="ri-delete-bin-line"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center lh-1">
+                                                <div class="me-3">
+                                                    <span class="avatar avatar-rounded">
+                                                        <img src="../assets/images/faces/11.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="d-block fw-semibold mb-1">Gray Noal</span>
+                                                    <span class="d-block text-muted fs-12">Manager</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>gray12gray@demo.com</td>
+                                        <td><div class="dropdown">
+                                            <a href="javascript:void(0);" class="btn btn-outline-light btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Active<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Active</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Inactive</a></li>
+                                            </ul>
+                                        </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-list">
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-primary-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-success-light btn-icon"><i class="ri-delete-bin-line"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="border-bottom-0">
+                                            <div class="d-flex align-items-center lh-1">
+                                                <div class="me-3">
+                                                    <span class="avatar avatar-rounded">
+                                                        <img src="../assets/images/faces/5.jpg" alt="">
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="d-block fw-semibold mb-1">Isa Bella</span>
+                                                    <span class="d-block text-muted fs-12">C.E.O</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td class="border-bottom-0">isa158@demo.com</td>
+                                        <td class="border-bottom-0"><div class="dropdown">
+                                            <a href="javascript:void(0);" class="btn btn-outline-light btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Active<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Active</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">In Active</a></li>
+                                            </ul>
+                                        </div>
+                                        </td>
+                                        <td class="border-bottom-0">
+                                            <div class="btn-list">
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-primary-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                <button aria-label="button" type="button" class="btn btn-sm btn-success-light btn-icon"><i class="ri-delete-bin-line"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End::row-2 -->
+
+       
+    </div>
+
+
+</div> 
+<!-- END MAIN-CONTENT -->
+
+{% endblock %}

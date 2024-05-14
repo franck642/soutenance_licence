@@ -34,7 +34,7 @@ Service -->
                 <div class="col-md-5 mb-3 text-center"> <!-- Ajout de la classe 'text-center' pour centrer le contenu -->
                 <div class="feature-items">
                     <!-- Envelopper l'icône avec un lien -->
-                    <a typpe="button" href="#" id="scanQrcode">
+                    <a typpe="button" href="#" data-toggle="modal" data-target="#myModalQr" id="scanQrcode">
                         <div class="feature-icon">
                             <i class="fa fa-camera fa-5x"></i>
                         </div>
@@ -44,8 +44,25 @@ Service -->
                     </div>
                 </div>
             </div>              
-                <!-- Service-01 END -->                             
-            </div>
+                <!-- Service-01 END -->                                        
+            <div class="modal fade" id="myModalQr">
+                <div class="modal-dialog modal-dialog-centered" id="success_transfer">
+                    <div class="modal-content">
+        
+                        <!-- Modal body -->
+                        <div class="d-flex justify-content-center modal-body">
+                            <div id="reading" style="width: 300px;"></div>
+                            <div id="qr-readering-results"></div>
+                            <!-- <p id="error_content_qr" class="alert alert-danger" hidden="true"></p> -->
+                        </div>
+        
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="stop_camera">Retour</button>
+                        </div>
+        
+                    </div>
+                </div>
             </div>
         </div>
         </div>

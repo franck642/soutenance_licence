@@ -36,51 +36,41 @@ Formulaire de rendez-vous -->
                     <h4 class="text-primary">Prenez rendez-vous maintenant avec votre patient!</h4>
                     <form class="mt-5" method="POST">
                         <div class="row align-items-center">
-                            
                             <div class="form-group mb-3 col-md-12">
-                                <input type="text" class="form-control" id="usernameDoctor" placeholder="Nom du docteur">
+                                <input type="text" class="form-control" id="usernameDoctor" placeholder="Nom du docteur" required>
                             </div>
                             <div class="form-group mb-3 col-lg-6">
-                                <input type="text" class="form-control" id="Department" placeholder="Département">
+                                <input type="text" class="form-control" id="Department" placeholder="Département" required>
                             </div>
                             <div class="form-group mb-3 col-md-6">
-                                <input type="text" class="form-control" id="phoneDoctor" placeholder="Numéro de téléphone du docteur">
+                                <input type="tel" class="form-control" id="phoneDoctor" placeholder="Numéro de téléphone du docteur" pattern="[0-9]{10}" required>
                             </div>
                             <div class="form-group mb-3 col-md-12">
-                                <input type="text" class="form-control" id="username" placeholder="Nom du patient">
+                                <input type="text" class="form-control" id="username" placeholder="Nom du patient" required>
                             </div>
                             <div class="form-group mb-3 col-md-6">
-                                <input type="text" class="form-control" id="phoneInput" placeholder="Numéro de téléphone">
+                                <input type="tel" class="form-control" id="phoneInput" placeholder="Numéro de téléphone" pattern="[0-9]{10}" required>
                             </div>
                             <div class="form-group mb-3 col-md-6">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
                             </div>                  
                             <div class="form-group mb-3 col-lg-12">
-                                <input type="text" class="form-control" id="motif" placeholder="Motif du rendez-vous">
+                                <input type="text" class="form-control" id="motif" placeholder="Motif du rendez-vous" required>
                             </div>                           
                             <div class="form-group mb-3 col-md-6 datetimepickers">
                                 <label class="form-label text-dark">Date requise</label>
                                 <div class="input-group date" id="datetimepicker-01" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#datetimepicker-01">
+                                    <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date" data-target="#datetimepicker-01" required>
                                     <div class="input-group-append" data-target="#datetimepicker-01" data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group mb-3 select-border col-md-6">
-                                <label class="form-label text-dark">Sélectionnez l'heure</label>
-                                <div class="input-group date" id="datetimepicker-03" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" placeholder="Heure" data-target="#datetimepicker-03">
-                                    <div class="input-group-append" data-target="#datetimepicker-03" data-toggle="datetimepicker">
-                                        <div class="input-group-text"><i class="far fa-clock"></i></div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>                           
                             <div class="form-group col-sm-12">
                                 <button type="submit" class="btn btn-primary">Soumettre</button>
                             </div>
                         </div>
-                    </form>
+                    </form>                    
                 </div>
             </div>
         </div>
@@ -156,5 +146,7 @@ Horaire -->
 </section>
 <!--=================================
 Schedule -->
+
+<script src="{% static 'js/backend/appointment.js' %}"></script>
 
 {% endblock %}

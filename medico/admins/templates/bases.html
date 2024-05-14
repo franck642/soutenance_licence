@@ -1,0 +1,349 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-menu-styles="dark" data-toggled="close">
+
+    
+<!-- Mirrored from php.spruko.com/ynex/ynex/pages/index4.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Mar 2024 11:17:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+    <head>
+
+        <!-- Meta Data -->
+		<meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Description" content="PHP Bootstrap Responsive Admin Web Dashboard Template">
+        <meta name="Author" content="Spruko Technologies Private Limited">
+        <meta name="keywords" content="dashboard, template dashboard, Bootstrap dashboard, admin panel template, sales dashboard, Bootstrap admin panel, stocks dashboard, crm admin dashboard, ecommerce admin panel, admin template, admin panel dashboard, course dashboard, template ecommerce website, dashboard hrm, admin dashboard">
+
+        <!-- FAVICON -->
+        <link rel="icon" href="{% static 'assets/images/brand-logos/favicon.ico' %}" type="image/x-icon">
+
+        <!-- BOOTSTRAP CSS -->
+        <link id="style" href="{% static 'assets/libs/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- ICONS CSS -->
+        <link href="{% static 'assets/css/icons.css' %}" rel="stylesheet">
+
+        <!-- STYLES CSS -->
+        <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">
+
+        <!-- NODE WAVES CSS -->
+        <link href="{% static 'assets/libs/node-waves/waves.min.css' %}" rel="stylesheet">
+
+        <!-- SIMPLEBAR CSS -->
+        <link rel="stylesheet" href="{% static 'assets/libs/simplebar/simplebar.min.css' %}">
+
+        <!-- COLOR PICKER CSS -->
+        <link rel="stylesheet" href="{% static 'assets/libs/flatpickr/flatpickr.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/libs/@simonwep/pickr/themes/nano.min.css' %}">
+
+        <!-- CHOICES CSS -->
+        <link rel="stylesheet" href="{% static 'assets/libs/choices.js/public/assets/styles/choices.min.css' %}">
+
+
+	</head>
+
+	<body>
+
+
+        <!-- LOADER -->
+		<div id="loader">
+			<img src="https://php.spruko.com/ynex/ynex/assets/images/media/loader.svg" alt="">
+		</div>
+		<!-- END LOADER -->
+
+        <!-- PAGE -->
+		<div class="page">
+
+            <!-- HEADER -->
+
+            <header class="app-header">
+                <div class="main-header-container container-fluid">
+                    <div class="header-content-left">
+                        <div class="header-element">
+                            <div class="horizontal-logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="{% static 'assets/images/brand-logos/desktop-logo.png' %}" alt="logo" class="desktop-logo">
+                                    <img src="{% static 'assets/images/brand-logos/toggle-logo.png' %}" alt="logo" class="toggle-logo">
+                                    <img src="{% static 'assets/images/brand-logos/desktop-dark.png' %}" alt="logo" class="desktop-dark">
+                                    <img src="{% static 'assets/images/brand-logos/toggle-dark.png' %}" alt="logo" class="toggle-dark">
+                                    <img src="{% static 'assets/images/brand-logos/desktop-white.png' %}" alt="logo" class="desktop-white">
+                                    <img src="{% static 'assets/images/brand-logos/toggle-white.png' %}" alt="logo" class="toggle-white">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-element">
+                            <a aria-label="Hide Sidebar" class="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle" data-bs-toggle="sidebar" href="javascript:void(0);"><span></span></a>
+                        </div>
+                    </div>
+                    <div class="header-content-right">
+                        <div class="header-element header-theme-mode">
+                            <a href="javascript:void(0);" class="header-link layout-setting">
+                                <span class="light-layout">
+                                    <i class="bx bx-moon header-link-icon"></i>
+                                </span>
+                                <span class="dark-layout">
+                                    <i class="bx bx-sun header-link-icon"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="header-element">
+                            <a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-sm-2 me-0">
+                                        <img src="{% static 'assets/images/faces/9.jpg' %}" alt="img" width="32" height="32" class="rounded-circle">
+                                    </div>
+                                    <div class="d-sm-block d-none">
+                                        <p class="fw-semibold mb-0 lh-1">DASSI Franck</p>
+                                        <span class="op-7 fw-normal d-block fs-11">Web Develeper</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end" aria-labelledby="mainHeaderProfile">
+                                <li><a class="dropdown-item d-flex" href="profile.html"><i class="ti ti-user-circle fs-18 me-2 op-7"></i>Profile</a></li>                            
+                                <li><a class="dropdown-item d-flex" href="signin-cover.html"><i class="ti ti-logout fs-18 me-2 op-7"></i>Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- END HEADER -->
+
+            <!-- SIDEBAR -->
+            
+            <aside class="app-sidebar sticky" id="sidebar">
+
+                <!-- Start::main-sidebar-header -->
+                <div class="main-sidebar-header">
+                    <a href="index.html" class="header-logo">
+                        <img src="{% static 'assets/images/brand-logos/desktop-logo.png' %}" alt="logo" class="desktop-logo">
+                        <img src="{% static 'assets/images/brand-logos/toggle-logo.png' %}" alt="logo" class="toggle-logo">
+                        <img src="{% static 'assets/images/brand-logos/desktop-dark.png' %}" alt="logo" class="desktop-dark">
+                        <img src="{% static 'assets/images/brand-logos/toggle-dark.png' %}" alt="logo" class="toggle-dark">
+                        <img src="{% static 'assets/images/brand-logos/desktop-white.png' %}" alt="logo" class="desktop-white">
+                        <img src="{% static 'assets/images/brand-logos/toggle-white.png' %}" alt="logo" class="toggle-white">
+                    </a>
+                </div>
+                <!-- End::main-sidebar-header -->
+
+                <!-- Start::main-sidebar -->
+                <div class="main-sidebar" id="sidebar-scroll">
+
+                    <!-- Start::nav -->
+                    <nav class="main-menu-container nav nav-pills flex-column sub-open">
+                        <div class="slide-left" id="slide-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"> <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path> </svg>
+                        </div>
+                        <ul class="main-menu">
+                            <!-- Start::slide__category -->
+                            <li class="slide__category"><span class="category-name">Main</span></li>
+                            <!-- End::slide__category -->
+
+                            <!-- Start::slide -->
+                            <li class="slide has-sub">
+                                <a href="javascript:void(0);" class="side-menu__item">
+                                    <i class="bx bx-home side-menu__icon"></i>
+                                    <span class="side-menu__label">Dashboards<span class="badge bg-warning-transparent ms-2">12</span></span>
+                                    <i class="fe fe-chevron-right side-menu__angle"></i>
+                                </a>
+                                <ul class="slide-menu child1">
+                                    <li class="slide side-menu__label1">
+                                        <a href="javascript:void(0);">Dashboards</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="userlist.html" class="side-menu__item">Listes des hôpitaux</a>
+                                    </li>                                   
+                                    <li class="slide">
+                                        <a href="index12.html" class="side-menu__item">Personal</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- End::slide -->
+
+                            <!-- Start::slide__category -->
+                            <li class="slide__category"><span class="category-name">Pages</span></li>
+                            <!-- End::slide__category -->
+
+                            <!-- Start::slide -->
+                            <li class="slide has-sub">
+                                <a href="javascript:void(0);" class="side-menu__item">
+                                    <i class="bx bx-file-blank side-menu__icon"></i>
+                                    <span class="side-menu__label">Pages<span class="badge bg-secondary-transparent ms-2">New</span></span>
+                                    <i class="fe fe-chevron-right side-menu__angle"></i>
+                                </a>
+                                <ul class="slide-menu child1">
+                                    <li class="slide side-menu__label1">
+                                        <a href="javascript:void(0);">Pages</a>
+                                    </li>                                                                   
+                                    <li class="slide">
+                                        <a href="faqs.html" class="side-menu__item">FAQ's</a>
+                                    </li>
+                                                                      
+                                    <li class="slide">
+                                        <a href="notifications.html" class="side-menu__item">Notifications</a>
+                                    </li>                                  
+                                    <li class="slide">
+                                        <a href="profile.html" class="side-menu__item">Profile</a>
+                                    </li>                              
+                                    <li class="slide">
+                                        <a href="terms-conditions.html" class="side-menu__item">Terms & Conditions</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <!-- End::slide -->
+
+                            <!-- Start::slide -->
+                            <li class="slide has-sub">
+                                <a href="javascript:void(0);" class="side-menu__item">
+                                    <i class="bx bx-fingerprint side-menu__icon"></i>
+                                    <span class="side-menu__label">Authentication</span>
+                                    <i class="fe fe-chevron-right side-menu__angle"></i>
+                                </a>
+                                <ul class="slide-menu child1">
+                                    <li class="slide side-menu__label1">
+                                        <a href="javascript:void(0);">Authentication</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="comingsoon.html" class="side-menu__item">Coming Soon</a>
+                                    </li>                                     
+                                    <li class="slide has-sub">
+                                        <a href="javascript:void(0);" class="side-menu__item">Reset Password
+                                            <i class="fe fe-chevron-right side-menu__angle"></i></a>
+                                        <ul class="slide-menu child2">
+                                            <li class="slide">
+                                                <a href="resetpassword-cover.html" class="side-menu__item">Cover</a>
+                                            </li>
+                                        </ul>
+                                    </li>     
+                                    <li class="slide has-sub">
+                                        <a href="javascript:void(0);" class="side-menu__item">Sign Up
+                                            <i class="fe fe-chevron-right side-menu__angle"></i></a>
+                                        <ul class="slide-menu child2">
+                                            <li class="slide">
+                                                <a href="signup-cover.html" class="side-menu__item">Cover</a>
+                                            </li>
+                                        </ul>
+                                    </li>  
+                                    <li class="slide has-sub">
+                                        <a href="javascript:void(0);" class="side-menu__item">Sign In
+                                            <i class="fe fe-chevron-right side-menu__angle"></i></a>
+                                        <ul class="slide-menu child2">                                          
+                                            <li class="slide">
+                                                <a href="signin-cover.html" class="side-menu__item">Cover</a>
+                                            </li>
+                                        </ul>
+                                    </li>                                    
+                                </ul>
+                            </li>
+                            <!-- End::slide -->
+
+                            <!-- Start::slide -->
+                            <li class="slide has-sub">
+                                <a href="javascript:void(0);" class="side-menu__item">
+                                    <i class="bx bx-error side-menu__icon"></i>
+                                    <span class="side-menu__label">Error</span>
+                                    <i class="fe fe-chevron-right side-menu__angle"></i>
+                                </a>
+                                <ul class="slide-menu child1">
+                                    <li class="slide side-menu__label1">
+                                        <a href="javascript:void(0);">Error</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="error401.html" class="side-menu__item">401 - Error</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="error404.html" class="side-menu__item">404 - Error</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="error500.html" class="side-menu__item">500 - Error</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- End::slide -->                          
+                            
+                        </ul>
+                        <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"> <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path> </svg></div>
+                    </nav>
+                    <!-- End::nav -->
+
+                </div>
+                <!-- End::main-sidebar -->
+
+            </aside>
+            <!-- FOOTER -->
+
+            <!-- Contenu spécifique à chaque page -->
+            <main>
+                {% block content %}
+                {% endblock %}
+            </main>
+            
+            <footer class="footer mt-auto py-3 bg-white text-center">
+                <div class="container">
+                    <span class="text-muted"> Copyright © <span id="year"></span> <a
+                            href="javascript:void(0);" class="text-dark fw-semibold">Ynex</a>.
+                        Designed with <span class="bi bi-heart-fill text-danger"></span> by <a href="javascript:void(0);">
+                            <span class="fw-semibold text-primary text-decoration-underline">Spruko</span>
+                        </a> All
+                        rights
+                        reserved
+                    </span>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+
+        </div>
+        <!-- END PAGE-->
+
+        <!-- SCRIPTS -->
+
+        
+        <!-- SCROLL-TO-TOP -->
+        <div class="scrollToTop">
+                <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span>
+        </div>
+        <div id="responsive-overlay"></div>
+
+        <!-- POPPER JS -->
+        <script src="{% static 'assets/libs/@popperjs/core/umd/popper.min.js' %}"></script>
+        
+        <!-- BOOTSTRAP JS -->
+        <script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        
+        <!-- NODE WAVES JS -->
+        <script src="{% static 'assets/libs/node-waves/waves.min.js' %}"></script>
+        
+        <!-- SIMPLEBAR JS -->
+        <script src="{% static 'assets/libs/simplebar/simplebar.min.js' %}"></script>
+        <script src="{% static 'assets/js/simplebar.js' %}"></script>
+        
+        <!-- COLOR PICKER JS -->
+        <script src="{% static 'assets/libs/@simonwep/pickr/pickr.es5.min.js' %}"></script>
+        
+        <!-- DEFAULTMENU JS -->
+        <script src="{% static 'assets/js/defaultmenu.js' %}"></script>
+        
+        <!-- APEX CHART JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js' %}"></script>
+        
+        <!-- JOBS-DASHBOARD JS -->
+        <script src="{% static 'assets/js/jobs-dashboard.js' %}"></script>
+        
+        <!-- STICKY JS -->
+        <script src="{% static 'assets/js/sticky.js' %}"></script>
+        
+        <!-- CUSTOM JS -->
+        <script src="{% static 'assets/js/custom.js' %}"></script>
+        
+        <!-- CUSTOM-SWITCHER JS -->
+        <script src="{% static 'assets/js/custom-switcher.js' %}"></script>
+        
+
+    </body>
+
+<!-- Mirrored from php.spruko.com/ynex/ynex/pages/index4.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Mar 2024 11:17:48 GMT -->
+</html>
+<!-- This code use for render base file -->
